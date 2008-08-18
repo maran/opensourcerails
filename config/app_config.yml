@@ -1,31 +1,31 @@
 # Set Site Details
-site_name: "Open Source Rails"
-site_url: "http://www.opensourcerails.com"
-version: "v1.0"
+site_name: "The DStillery"
+site_url: "http://dstillery.com"
+version: "v0.1"
 require_email_activation: true
 
-blog_url: http://blog.opensourcerails.com
-
-file_storage: s3
+file_storage: file
 
 # SEO Stuff
-default_meta_keywords: "open source ruby on rails"
-default_meta_description: "Open Source Rails is a community site dedicated to tracking the best open source Ruby on Rails applications."
+default_meta_keywords: "NintendoDS Nintendo DS Homebrew Games Application"
+default_meta_description: "Community driven Nintendo DS homebrew site."
 
 # Paging Sizes
 projects_per_page: 6
 
 # Set Avatar Sizes
 screenshot_sizes: 
-  medium: "225x225#"
-  thumb: "70x70#"
+  medium: "128x192"
+  thumb: "70x70"
 
 # Set default avatar
 screenshot_default: "/images/default_screenshots/:style.png"
 
-spam_question: What is 3 plus 2?
+spam_question: What is 3 plus 3?
 spam_answer: 
-  - "5"
-  - "five"
+  - "6"
+  - "six"
 
 show_morph: false
+
+blog_url: "http://blog.dstillery.com"

@@ -22,6 +22,8 @@ ActionController::Routing::Routes.draw do |map|
   map.search "/search", :controller => "projects", :action => "search"  
   map.bookmarks "/bookmarks", :controller => "projects", :action => "bookmarks"
   map.about "/about", :controller => "pages", :action => "about"
+  map.applications "/applications", :controller => "projects", :action => "index" ,:tag => "application"
+  map.games "/games", :controller => "projects",:action => "index", :tag => "game"
   map.blog "/blog", :controller => "pages", :action => "blog"
   # blog
   # map.blog "/blog", :controller => "blog", :action => "index"

@@ -3,8 +3,8 @@
 - build_form_for [@project, version], :html => {:multipart => true} do |f|
   
   .attach-download
-    - f.file_field :download, :label => "Upload Tarball", :size => "25" do
-      .text-right= link_to "Set Download Link", "#", :class => "set-link"
+    - f.file_field :download, :label => "Upload archive", :size => "25" do
+      .text-right= link_to "Or Set Download Link", "#", :class => "set-link"
   .attach-link{hidden}
     - f.text_field :link, :label => "Download Link" do
       .text-right= link_to "Upload Version", "#", :class => "set-upload"

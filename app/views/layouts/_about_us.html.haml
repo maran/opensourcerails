@@ -1,9 +1,9 @@
 - force_show = false unless local_assigns[:force_show]
 #about_us{hide_unless(current_or_anon_user.show_welcome! || force_show)}
   - right_box "about" do
-    %h3.about About Open Source Rails
+    %h3.about About The DStillery
     %p
-      Open Source Rails is a community site dedicated to tracking the best open source Ruby on Rails applications. 
+      The DStillery is a community site dedicated to tracking the best open Nintendo DS homebrew. 
 
     - unless force_show
       = link_to "Read More...", about_url, :class => "readmore"

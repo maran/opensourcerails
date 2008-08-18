@@ -1,5 +1,6 @@
 .DS_Store
 config/amazon_s3.yml
+config/database.yml
 tmp/**/*
 log/*.log
 doc/api
@@ -10,4 +11,4 @@ public/downloads
 public/screenshots
 public/images/screenshots
 db/restore.sql
-config/database.yml
+nbproject/

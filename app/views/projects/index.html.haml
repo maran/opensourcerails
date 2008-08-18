@@ -1,4 +1,6 @@
-- active_tab :gallery
+- if params[:tag]
+  - active_tab params[:tag].intern
+- else active_tab :gallery
 
 #body
   #body_left

@@ -9,7 +9,9 @@
     %ul
       - if active_tab.is_a? String
         %li= menu_item(active_tab, url_for, true)
-      %li= menu_item("Gallery", root_url, active_tab == :gallery)
+      %li= menu_item("All", root_url, active_tab == :gallery)
+      %li= menu_item("Applications", applications_url, active_tab == :application)
+      %li= menu_item("Games", games_url, active_tab == :game)
       %li= menu_item("About", about_url, active_tab == :about)
       %li= menu_item("Blog", blog_url, active_tab == :blog)
       - if logged_in?

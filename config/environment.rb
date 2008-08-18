@@ -140,8 +140,7 @@ Rails::Initializer.run do |config|
 end
 
 ActionMailer::Base.delivery_method = :smtp
-
 if defined? ExceptionNotifier
-  ExceptionNotifier.exception_recipients = %w(opensourcerails@gmail.com)
+  ExceptionNotifier.exception_recipients = %w(maran@brightlight-ict.nl)
   ExceptionNotifier.delivery_method = :smtp
 end

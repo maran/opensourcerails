@@ -247,7 +247,7 @@ class ProjectsController < ApplicationController
     elsif @search_term
       @projects = Project.search(@search_term, :page => params[:page], :per_page => AppConfig.projects_per_page)
     else
-      @projects = Project.paginate(:conditions => Project.in_gallery_conditions, :order => "promoted_at DESC", :page => params[:page], :per_page => AppConfig.projects_per_page)
+      @projects = Project.paginate(:conditions => Project.in_gallery_conditions, :order => "promoted_at DESC", :page => params[:page], :per_page => AppConfig.projects_per_page)      
     end
     
   end
