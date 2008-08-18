@@ -7,9 +7,9 @@
       = link_to image_tag(screenshot.screenshot.url(:thumb)), screenshot.screenshot.url, :id => dom_id(screenshot), :class => "lightview", :rel => "gallery[screens]", :target => "_blank"
 
       - if screenshot.owned_by?(current_or_anon_user)
-        .switch-default.hidden
-          = link_to "", set_project_screenshot_url(screenshot.project, screenshot), :class => "lv_Button", :method => :put, :confirm => "This will set your default page to this image"
-
-        .delete= delete_link image_tag("delete_thumbnail.png"), |
+        -#.switch-default
+        .delete
+          = link_to_image("approve.png", set_project_screenshot_url(screenshot.project, screenshot), :method => :put, :confirm => "This will set your default page to this image")
+          = delete_link image_tag("delete_thumbnail.png"), |
                              project_screenshot_url(screenshot.project, screenshot), |
                              :title => "Delete Screenshot" |
