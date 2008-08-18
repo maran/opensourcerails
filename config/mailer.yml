@@ -1,0 +1,4 @@
+---
+:address: "localhost" 
+:domain: "localhost" 
+:authentication: :none
