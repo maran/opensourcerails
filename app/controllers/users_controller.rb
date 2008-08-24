@@ -188,8 +188,8 @@ class UsersController < ApplicationController
 
 
 protected
-  def find_user
-    @user = User.find(params[:id])
+  def find_user   
+    @user = User.find(params[:id])    
   end
   
   # verify that the current user can edit this profile

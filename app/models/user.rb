@@ -261,6 +261,11 @@ class User < ActiveRecord::Base
       user.is_spammer!
     end
   end
+  
+  def to_param
+    permalink = login||""
+    "#{id}-#{permalink.gsub(/[^a-z0-9]+/i, '-')}"
+  end
 
   protected
     # before filter 

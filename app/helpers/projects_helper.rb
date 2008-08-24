@@ -4,7 +4,7 @@ module ProjectsHelper
     
     haml_tag :span, :class => "activity #{activity.target_type}".downcase do
       
-      puts activity.user_name
+      puts link_to activity.user_name, user_path(activity.user)
       puts " "
       puts activity.action_name
       puts " "
