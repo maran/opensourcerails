@@ -96,6 +96,7 @@ ActiveRecord::Schema.define(:version => 20080728120230) do
     t.integer  "screenshots_count",      :limit => 11,                                :default => 0
     t.integer  "instructions_count",     :limit => 11,                                :default => 0
     t.datetime "last_changed"
+    t.integer  "screenshot_id",          :limit => 11
   end
 
   create_table "ratings", :force => true do |t|

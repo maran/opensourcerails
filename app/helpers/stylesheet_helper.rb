@@ -2,7 +2,7 @@ module StylesheetHelper
   
   def stylesheets(options = {})
     [
-      stylesheet("blueprint", "util", "forms", "application", :cache => "base-cache"),
+      stylesheet("blueprint", "util", "forms", "application"),
       stylesheet(include_css("v2")),
 
       page_stylesheets(options)
