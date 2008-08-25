@@ -13,6 +13,8 @@
     = auto_discovery_link_tag(:atom, AppConfig.rss_url || formatted_projects_url(:atom), :title => "Latest Projects")
     
   %body
+    .site_notice              
+      = link_to 'Welcome to the DStillery, read all about the opening on our blog.', 'http://weblog.brightlight-ict.nl'
     .body-main
       .page-content
         = partial "layouts/header"
