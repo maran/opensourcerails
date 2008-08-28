@@ -4,7 +4,6 @@ module StylesheetHelper
     [
       stylesheet("blueprint", "util", "forms", "application"),
       stylesheet(include_css("v2")),
-
       page_stylesheets(options)
     ].join("\n")
     
