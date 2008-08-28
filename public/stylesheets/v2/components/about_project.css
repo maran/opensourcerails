@@ -1,0 +1,19 @@
+#about_project {
+  position: relative; }
+#about_project h3 {
+  width: 215px;
+  overflow: hidden;
+  white-space: nowrap; }
+#about_project a {
+  font-weight: bold;
+  color: #000; }
+#about_project .edit {
+  position: absolute;
+  right: 0;
+  top: 12px; }
+#about_project .display {
+  padding-top: 5px; }
+#about_project .display .description {
+  margin-bottom: 5px;
+  max-height: 150px;
+  overflow: auto; }

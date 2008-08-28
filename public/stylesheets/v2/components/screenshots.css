@@ -1,0 +1,35 @@
+#screenshots {
+  max-height: 165px;
+  overflow: auto; }
+#screenshots .screenshots {
+  padding-top: 0px;
+  padding-bottom: 10px;
+  padding-left: 6px; }
+#screenshots .screenshot {
+  position: relative;
+  float: left;
+  margin: 4px;
+  margin-top: 0px;
+  border: 3px solid #eee; }
+#screenshots .screenshot .delete {
+  display: none;
+  position: absolute;
+  top: 2px;
+  right: 2px; }
+
+.lv_Data .lv_ChangeDefault {
+  position: relative;
+  border-left: 1px solid #efefef;
+  padding: 0 5px;
+  margin-top: 5px;
+  vertical-align: middle; }
+.lv_Data .lv_ChangeDefault .lv_Button {
+  background-attachment: scroll;
+  background-color: #FFFFFF;
+  background-image: url(/images/set_default.png);
+  background-position: left top;
+  background-repeat: no-repeat;
+  height: 14px;
+  opacity: 0.75;
+  width: 95px;
+  float: left; }

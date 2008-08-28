@@ -1,0 +1,16 @@
+.mini-form {
+  padding-top: 10px; }
+.mini-form .field {
+  margin: 0; }
+.mini-form .field.text_field input, .mini-form .field.password_field input {
+  width: 255px;
+  margin-right: 10px; }
+.mini-form .field.text_area textarea {
+  width: 255px;
+  height: 60px; }
+.mini-form .check_box {
+  padding-top: 15px; }
+.mini-form .actions {
+  margin-top: 15px; }
+.mini-form .actions input, .mini-form .actions img {
+  vertical-align: -5px; }

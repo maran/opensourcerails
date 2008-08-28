@@ -1,0 +1,14 @@
+.tab-form {
+  padding-top: 10px; }
+.tab-form .field {
+  margin: 0; }
+.tab-form .field.text_field input {
+  width: 243px;
+  margin-right: 10px; }
+.tab-form .field.text_area textarea {
+  width: 243px;
+  height: 60px; }
+.tab-form .check_box {
+  padding-top: 15px; }
+.tab-form .actions {
+  margin-top: 15px; }

@@ -1,0 +1,19 @@
+#project_grid h3 {
+  margin-bottom: 1em;
+  border-bottom: 1px dashed #3a3a3a;
+  padding-bottom: 5px; }
+#project_grid h3 a {
+  float: right;
+  margin-right: 5px;
+  padding-top: 2px;
+  font-size: .7em;
+  color: #00AEEF; }
+#project_grid .grid-paging {
+  position: relative; }
+#project_grid .grid-paging .note {
+  position: absolute;
+  right: 5px;
+  text-align: right;
+  font-size: 10px;
+  top: 2px;
+  color: #aaa; }

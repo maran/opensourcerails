@@ -1,0 +1,75 @@
+.ratings {
+  filter: alpha(opacity=100);
+  -moz-opacity: 1;
+  opacity: 1; }
+.ratings .ratings-control {
+  padding-top: 7px;
+  clear: left; }
+.ratings .ratings-control a {
+  float: left;
+  display: block;
+  width: 25px;
+  height: 25px;
+  border: 0;
+  background-image: url(/images/rating.png); }
+.ratings .ratings-control a:focus {
+  outline: none; }
+.ratings .ratings-control a.rate-init {
+  display: none; }
+.ratings .ratings-control a.rating_off {
+  background-position: 0 0px; }
+.ratings .ratings-control a.rating_half {
+  background-position: 0 -25px; }
+.ratings .ratings-control a.rating_on {
+  background-position: 0 -50px; }
+.ratings .ratings-control a.rating_selected {
+  background-position: 0 -75px; }
+.ratings .ratings-control.small a {
+  width: 15px;
+  height: 15px;
+  background-image: url(/images/rating-sm.png); }
+.ratings .ratings-control.small a.rating_off {
+  background-position: 0 0px; }
+.ratings .ratings-control.small a.rating_half {
+  background-position: 0 -15px; }
+.ratings .ratings-control.small a.rating_on {
+  background-position: 0 -30px; }
+.ratings .ratings-control.small a.rating_selected {
+  background-position: 0 -45px; }
+.ratings .votes {
+  text-align: right;
+  float: right;
+  padding: 5px 3px 0 0; }
+.ratings .votes img {
+  vertical-align: -3px;
+  margin-left: 5px; }
+.ratings .votes .buggy, .ratings .votes .happy {
+  font-size: 13px;
+  font-weight: bold; }
+.ratings .votes .buggy {
+  color: red; }
+.ratings .votes .happy {
+  color: green; }
+.ratings .votes .percent-score {
+  float: left;
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 7px;
+  color: green; }
+.ratings .votes .percent-score.bad {
+  color: red; }
+.ratings .votes .percent-score.ok {
+  color: orange; }
+
+.post-ratings-loading {
+  display: none;
+  height: 16px;
+  text-align: left; }
+
+.post-ratings-image {
+  border: 0px; }
+
+.post-ratings img, .post-ratings-loading img, .post-ratings-image img {
+  border: 0px;
+  padding: 0px;
+  margin: 0px; }

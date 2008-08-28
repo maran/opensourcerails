@@ -1,0 +1,89 @@
+.tabs {
+  padding: 0;
+  width: 303px;
+  margin-bottom: 10px;
+  background: url(/images/template/right_tab_bg.gif) repeat-y; }
+.tabs .ui-tabs-hide {
+  display: none; }
+.tabs .ui-tabs-panel {
+  padding: 0px 10px 0px 10px;
+  margin: 10px;
+  margin-left: 0px;
+  max-height: 300px;
+  overflow: auto; }
+.tabs .ui-tabs-panel h2 {
+  display: none;
+  color: #313062; }
+.tabs .ui-tabs-panel h3 {
+  display: none; }
+.tabs .ui-tabs-panel a {
+  font-weight: bold;
+  color: #000; }
+.tabs .ui-tabs-panel p {
+  margin-top: 10px; }
+.tabs .ui-tabs-panel ul {
+  margin: 0px 0 5px 15px;
+  padding: 0;
+  list-style-type: none; }
+.tabs .ui-tabs-panel ul li {
+  margin: 0;
+  padding: 3px 0 3px 0; }
+.tabs .ui-tabs-panel ul li .stat {
+  font-size: 9px;
+  color: #666; }
+.tabs .ui-tabs-panel ul li.first {
+  padding-top: 0px; }
+.tabs .tab-bottom {
+  width: 303px;
+  height: 8px;
+  background-image: url(/images/tab-bottom.png);
+  background-repeat: no-repeat; }
+.tabs ul.ui-tabs-nav {
+  margin: 0;
+  background: #fff;
+  padding: 0; }
+.tabs ul.ui-tabs-nav li {
+  height: 37px;
+  width: 151px;
+  overflow: hidden;
+  list-style: none;
+  margin: 0;
+  float: left;
+  text-align: center;
+  background-image: url(/images/tab-half.png);
+  background-repeat: no-repeat; }
+.tabs ul.ui-tabs-nav li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-bottom: none;
+  text-decoration: none;
+  color: #333;
+  line-height: 37px;
+  font-size: 12px;
+  text-transform: uppercase; }
+.tabs ul.ui-tabs-nav li a:link {
+  color: #313062; }
+.tabs ul.ui-tabs-nav li a:hover {
+  color: #CC0000; }
+.tabs ul.ui-tabs-nav li.ui-tabs-selected {
+  background-image: url(/images/tab-half-highlighted.png); }
+.tabs ul.ui-tabs-nav li.ui-tabs-selected a {
+  text-decoration: none;
+  font-weight: bold; }
+.tabs ul.ui-tabs-nav li.ui-tabs-selected a:hover {
+  color: #474848; }
+.tabs ul.ui-tabs-nav li.ui-tabs-selected a:focus, .tabs ul.ui-tabs-nav li.ui-tabs-selected a:active {
+  outline: none; }
+
+.tabs.size-2 ul.ui-tabs-nav li {
+  width: 151px;
+  background-image: url(/images/tab-half.png); }
+.tabs.size-2 ul.ui-tabs-nav li.ui-tabs-selected {
+  background-image: url(/images/tab-half-highlighted.png); }
+
+.tabs.size-3 ul.ui-tabs-nav li {
+  width: 101px;
+  background-image: url(/images/tab-third.png); }
+.tabs.size-3 ul.ui-tabs-nav li.ui-tabs-selected {
+  background-image: url(/images/tab-third-highlighted.png); }

@@ -1,0 +1,105 @@
+#app_item {
+  width: 538px;
+  border: 1px solid #E9E9E9;
+  padding: 1px; }
+#app_item #app_item_top {
+  width: 100%;
+  height: 60px;
+  background: #F6F6F6;
+  clear: both; }
+#app_item #app_item_top #app_item_top_left {
+  float: left; }
+#app_item #app_item_top #app_item_top_left h2 {
+  font-size: 16px;
+  color: #595959;
+  margin-left: 14px;
+  padding-top: 8px;
+  padding-bottom: 3px; }
+#app_item #app_item_top #app_item_top_left h3 {
+  font-size: 12px;
+  color: #9c9c9c;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  margin-left: 14px;
+  max-width: 375px; }
+#app_item #app_item_top #app_item_top_right {
+  float: right; }
+#app_item #view_slideshow_link {
+  width: 138px;
+  height: 34px;
+  font-size: 0.2em;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  text-indent: -99999px;
+  margin: 15px 11px 0 0; }
+#app_item #view_slideshow_link span {
+  background: url(/images/view-slideshow.png) no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer; }
+#app_item #app_item_image {
+  width: 514px;
+  border-bottom: 1px dashed #d9d9d9;
+  text-align: center;
+  padding-top: 5px;
+  margin-left: 12px;
+  overflow: hidden;
+  clear: both; }
+#app_item #app_item_image img {
+  max-width: 100%; }
+#app_item #app_item_links {
+  width: 514px;
+  clear: both;
+  border-bottom: 1px dashed #d9d9d9;
+  margin-left: 12px; }
+#app_item #app_item_links #app_item_links_left {
+  float: left;
+  padding: 4px 0; }
+#app_item #app_item_links #app_item_links_left ul {
+  padding-left: 10px; }
+#app_item #app_item_links #app_item_links_left ul li {
+  float: left; }
+#app_item #app_item_links #app_item_links_left ul li img {
+  float: left; }
+#app_item #app_item_links #app_item_links_right {
+  float: right;
+  padding: 8px 0; }
+#app_item #app_item_links #app_item_links_right ul li {
+  float: left;
+  display: block;
+  color: #c71807;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; }
+#app_item #app_item_links #app_item_links_right a {
+  color: #c71807;
+  display: block;
+  float: left; }
+#app_item #app_item_links #app_item_links_right a span {
+  background: url(/images/template/arrow7.gif) no-repeat center left;
+  padding-left: 30px;
+  display: block;
+  float: left;
+  height: 20px;
+  cursor: pointer; }
+#app_item #app_item_links #app_item_links_right span a {
+  color: #000000;
+  display: inline;
+  float: none; }
+#app_item .bookmark-control {
+  display: block;
+  margin: 5px 0px; }
+#app_item .bookmark-control img {
+  vertical-align: middle;
+  width: 20px;
+  height: 20px; }
+#app_item #app_item_tags {
+  clear: both;
+  color: #666666;
+  padding: 9px 0 9px 15px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size: 14px; }
+#app_item #app_item_tags strong {
+  color: #000000; }
+#app_item #app_item_tags a {
+  color: #666666; }

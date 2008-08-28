@@ -1,0 +1,47 @@
+.comments {
+  font-family: Lucida Grande,Arial,Helvetica,sans-serif;
+  margin-top: 15px; }
+.comments h2 {
+  color: #474848;
+  margin-bottom: 0;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 20px;
+  font-weight: bold; }
+.comments h2 img {
+  vertical-align: middle;
+  margin-right: 5px; }
+.comments .comment .details {
+  padding: 10px 18px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  background: #ffffff;
+  border: 1px solid #e5e5e5; }
+.comments .comment .details p {
+  font-size: 1.2em;
+  line-height: 1.5em; }
+.comments .comment .details .actions {
+  margin-top: 10px; }
+.comments .comment .details .actions a {
+  font-weight: bold;
+  color: darkblue; }
+.comments .comment .comment-meta {
+  margin: 12px 0px 5px 0;
+  font-size: 11px; }
+.comments .comment .comment-meta strong {
+  font-size: .95em; }
+.comments .comment .trackback .comment-num {
+  padding: 0 0 0 20px; }
+.comments .comment .comment-num {
+  padding: 0;
+  font-weight: bold;
+  font-size: 1.3em;
+  float: right; }
+.comments .comment .comment-num a, .comments .comment .comment-num a:visited {
+  color: #888;
+  text-decoration: none; }
+.comments .comment .comment-num a:hover {
+  color: #303030;
+  text-decoration: none; }
+.comments .comment .comment-time {
+  font-size: .8em;
+  color: #888; }

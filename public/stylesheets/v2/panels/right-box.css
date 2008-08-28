@@ -1,0 +1,38 @@
+.right-box {
+  width: 303px;
+  background: url(/images/right-box/bg.png) repeat-y;
+  margin-bottom: 10px; }
+.right-box .right-box-top {
+  width: 100%;
+  background: url(/images/right-box/top.png) no-repeat; }
+.right-box .right-box-top.about {
+  background: url(/images/right-box/top_about.png) no-repeat; }
+.right-box .right-box-top.about .right-box-body h3 {
+  margin-left: 18px; }
+.right-box .right-box-top.add {
+  background: url(/images/right-box/top_add.png) no-repeat; }
+.right-box .right-box-top.add .right-box-body h3 {
+  margin-left: 18px; }
+.right-box .right-box-end {
+  width: 100%;
+  background: url(/images/right-box/end_bg.png) no-repeat bottom left; }
+.right-box .right-box-body {
+  width: 270px;
+  margin-left: 19px;
+  padding-bottom: 14px; }
+.right-box .right-box-body h3 {
+  color: #004a80;
+  font-size: 16px;
+  margin-left: 0px;
+  padding-top: 13px;
+  padding-bottom: 15px; }
+.right-box .right-box-body p {
+  line-height: 20px;
+  padding-bottom: 6px; }
+.right-box .right-box-body a {
+  font-weight: bold;
+  color: #00AEEF; }
+.right-box .right-box-body .readmore {
+  color: #000000;
+  font-weight: bold;
+  background: url(/images/template/dotted_black.gif) repeat-x left bottom; }
