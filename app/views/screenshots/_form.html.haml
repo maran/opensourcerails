@@ -2,6 +2,7 @@
   %div.field.file_field
     = link_to_image "add-sm.png", "#", :class => "add-screenshot-field right"
     = f.label "Upload Screenshots"
+    = f.label "Be sure to upload 256x384 or the image will be streched"
     = file_field_tag "screenshots[][screenshot]", :size => "25"
     
   .actions
