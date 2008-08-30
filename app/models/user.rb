@@ -268,7 +268,7 @@ class User < ActiveRecord::Base
   end
     
   def self.find_top_submitters
-    self.find(:all,  :order => "(SELECT count(*) FROM projects WHERE owner_id = id )", :conditions => "login <> ''", :limit => 5)
+    self.find(:all,  :order => "(SELECT count(*) FROM projects WHERE owner_id = `users`.id) DESC", :conditions => "login <> ''", :limit => 5)
   end
     
   protected
