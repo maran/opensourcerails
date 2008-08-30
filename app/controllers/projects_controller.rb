@@ -3,7 +3,7 @@ class ProjectsController < ApplicationController
     @projects = find_projects
     @upcoming = Project.upcoming
     @my_projects = current_or_anon_user.projects
-    
+    @top_users = User.find_top_submitters
     @latest_activities = Activity.latest
     
     @top_downloaded = Project.top_downloaded

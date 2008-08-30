@@ -10,8 +10,8 @@
       #my_bookmarks= partial "bookmarks/bookmark_list", :projects => @my_projects
 
 
-- if @latest_activities and @tags and @top_downloaded
-  - tabs(:class => "size-3") do
+- if @latest_activities and @tags and @top_downloaded and @top_users
+  - tabs(:class => "size-4") do
     - tab "Recent", "recent_activity", :class => "scroll-200" do
       = partial "projects/parts/activity_list", :activities => @latest_activities  
   
@@ -38,3 +38,9 @@
               = link_to project.title, project
               %span.stat== Bookmarked by #{pluralize(project.bookmarks_count, "person")}
 
+    - tab "Top Users", "top_users" do
+      %strong Top uploading users
+      %ul.activities
+        - @top_users.each_with_index do |user, i|
+          %li
+            = "#{i+1}. #{link_to user.login, user_path(user)} with #{user.submitted.count} projects."

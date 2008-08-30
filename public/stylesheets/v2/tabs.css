@@ -87,3 +87,9 @@
   background-image: url(/images/tab-third.png); }
 .tabs.size-3 ul.ui-tabs-nav li.ui-tabs-selected {
   background-image: url(/images/tab-third-highlighted.png); }
+  
+.tabs.size-4 ul.ui-tabs-nav li {
+  width: 75px;
+  background-image: url(/images/tab-third.png); }
+.tabs.size-4 ul.ui-tabs-nav li.ui-tabs-selected {
+  background-image: url(/images/tab-third-highlighted.png); }

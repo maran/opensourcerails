@@ -266,7 +266,11 @@ class User < ActiveRecord::Base
     permalink = login||""
     "#{id}-#{permalink.gsub(/[^a-z0-9]+/i, '-')}"
   end
-
+    
+  def self.find_top_submitters
+    self.find(:all,  :order => "(SELECT count(*) FROM projects WHERE owner_id = id )", :conditions => "login <> ''", :limit => 5)
+  end
+    
   protected
     # before filter 
     def encrypt_password
@@ -312,8 +316,5 @@ class User < ActiveRecord::Base
         UserMailer.deliver_signup_notification(self)
       end
     end
-    
-    def self.find_top_submitters
-      
-    end
+
 end
