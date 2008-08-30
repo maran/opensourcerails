@@ -312,4 +312,8 @@ class User < ActiveRecord::Base
         UserMailer.deliver_signup_notification(self)
       end
     end
+    
+    def self.find_top_submitters
+      
+    end
 end

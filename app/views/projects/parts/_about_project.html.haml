@@ -35,6 +35,13 @@
             %strong Source Code:
             = br
             = link_to h(project.source_url), project.source_url
+          - unless project.owner.blank? || project.owner.to_s == "Anonymous"
+            = br
+            %strong Uploaded by:
+            = link_to h(project.owner.login), user_path(project.owner)
+          = br
+          %strong Downloads:
+          = project.downloads
         
       .form-container.hidden
         
