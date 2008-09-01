@@ -1,7 +1,10 @@
-ActionController::Routing::Routes.draw do |map|
+ActionController::Routing::Routes.draw do |map|  
   map.resources :compos
   map.resource :session
-  map.resources :users, :member => {:activate => :get, :spammer => :put, :edit_password => :get}, :collection => {:reset_password => :any}
+  map.resources :blogs
+  map.resources :users, :member => {:activate => :get, :spammer => :put, :edit_password => :get}, :collection => {:reset_password => :any} do |users|
+    users.resources :blogs
+  end
     
   map.resources :projects, 
                   :member => {

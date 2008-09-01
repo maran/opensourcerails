@@ -15,11 +15,10 @@
                       :label => "Submit a New Application", |
                       :class => "submit toggle", :rel => "#new_project_tab_form" |
     
-    = render :partial => "projects/parts/mini_form"
-
+    = render :partial => "projects/parts/mini_form"    
     = partial "layouts/about_us"
+    = partial "blogs/list", :blogs => Blog.find(:all, :order => "created_at DESC")
     = partial "projects/parts/tabs"
-    
     
   = clear
 

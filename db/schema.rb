@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20080728120230) do
+ActiveRecord::Schema.define(:version => 20080901124804) do
 
   create_table "activities", :force => true do |t|
     t.datetime "created_at"
@@ -29,6 +29,14 @@ ActiveRecord::Schema.define(:version => 20080728120230) do
     t.datetime "happened_at"
   end
 
+  create_table "blogs", :force => true do |t|
+    t.string   "title"
+    t.integer  "user_id",    :limit => 11
+    t.text     "body"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "bookmarks", :force => true do |t|
     t.integer  "user_id",    :limit => 11
     t.integer  "project_id", :limit => 11
@@ -44,6 +52,32 @@ ActiveRecord::Schema.define(:version => 20080728120230) do
     t.string   "author_name"
     t.string   "author_email"
     t.integer  "owner_id",     :limit => 11
+  end
+
+  create_table "compo_categories", :force => true do |t|
+    t.integer  "compo_id",   :limit => 11
+    t.string   "name"
+    t.integer  "weight",     :limit => 11
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "compo_entries", :force => true do |t|
+    t.integer  "compo_id",   :limit => 11
+    t.integer  "user_id",    :limit => 11
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "compos", :force => true do |t|
+    t.string   "name"
+    t.string   "tag"
+    t.date     "start_date"
+    t.date     "end_date"
+    t.text     "description"
+    t.integer  "user_id",     :limit => 11
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "hosted_instances", :force => true do |t|
@@ -62,6 +96,14 @@ ActiveRecord::Schema.define(:version => 20080728120230) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "owner_id",   :limit => 11
+  end
+
+  create_table "news", :force => true do |t|
+    t.string   "title"
+    t.integer  "user_id",    :limit => 11
+    t.text     "body"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "projects", :force => true do |t|
@@ -96,7 +138,6 @@ ActiveRecord::Schema.define(:version => 20080728120230) do
     t.integer  "screenshots_count",      :limit => 11,                                :default => 0
     t.integer  "instructions_count",     :limit => 11,                                :default => 0
     t.datetime "last_changed"
-    t.integer  "screenshot_id",          :limit => 11
   end
 
   create_table "ratings", :force => true do |t|
@@ -109,6 +150,14 @@ ActiveRecord::Schema.define(:version => 20080728120230) do
 
   add_index "ratings", ["rater_id"], :name => "index_ratings_on_rater_id"
   add_index "ratings", ["rated_type", "rated_id"], :name => "index_ratings_on_rated_type_and_rated_id"
+
+  create_table "scores", :force => true do |t|
+    t.integer  "compo_category_id", :limit => 11
+    t.integer  "score",             :limit => 11
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "screenshots", :force => true do |t|
     t.integer  "project_id",              :limit => 11

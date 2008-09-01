@@ -4,17 +4,24 @@
 #body
   #body_left.swap
     #left_pad
-      = partial "projects/parts/grid", :projects => @bookmarked_projects, |
-                :grid_title => pluralize(@bookmarked_projects.size, "Bookmarked Project"), |
-                :empty_message => "No applications have been bookmarked yet." |
-      
+      - if @blog
+        #project_grid
+          = partial "blogs/show", :blog => @blog
+      - else
+        = partial "projects/parts/grid", :projects => @bookmarked_projects, |
+                  :grid_title => pluralize(@bookmarked_projects.size, "Bookmarked Project"), |
+                  :empty_message => "No applications have been bookmarked yet." |
+
       = clear
       
   #body_right
     - if current_or_anon_user == @user
       - right_box do
         = partial "users/parts/about_user", :user => @user
-    
+
+    -# right_box do is in the partial
+    = partial "blogs/list", :blogs => @user.blogs
+
     - right_box do
       %h3== #{name_display(@user)} Activities (#{@activities.size})
       .scroll-300

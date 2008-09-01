@@ -40,6 +40,10 @@ class UsersController < ApplicationController
     @activities = @user.activities.all(:limit => 101, :order => "created_at DESC")
     @rated_projects = @user.rated_projects
     
+    if params[:blog_id]
+      @blog = Blog.find(params[:blog_id])
+    end
+    
     respond_to do |format|
       format.html
       format.js do
