@@ -1,0 +1,16 @@
+%h3
+  = @blog.title
+%p
+  = RedCloth.new(@blog.body, [:filter_html, :filter_styles, :filter_classes, :lite_mode]).to_html
+
+
+%br
+= right_box do
+  Posted on
+  = @blog.created_at.strftime("%b%e, %Y at%l:%M %p %Z")
+  %p
+    - if current_user.id == params[:user_id].to_i
+      %strong
+        = link_to "Edit Blog", edit_user_blog_path(current_user, @blog), :style=>"color: #00AEEF"
+        |
+        = link_to "Destroy Blog", user_blog_path(current_user, @blog), :method => "delete", :confirm => 'Are you sure?', :style=>"color: #00AEEF"

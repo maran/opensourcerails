@@ -1,0 +1,19 @@
+<div id="body">
+  <div id="body_left">
+    <div id="left_pad">
+      <div id="project_grid">
+        <h3>New Compo</h3>
+        <% build_form_for(@compo) do |f| %>            
+          <%= f.text_field :name %>
+          <%= f.text_field :tag %>
+          <%= f.date_select(:start_date) %>
+          <%= f.date_select(:end_date) %>
+                
+          <div id="action">
+            <%= f.submit %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

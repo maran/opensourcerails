@@ -1,0 +1,36 @@
+<div id="body">
+  <div id="body_left" class="swap">
+    <div id="left_pad">
+      <div id="project_grid">
+        <h3><%= @compo.name %></h3>
+        <p>
+          Description:<br/>
+          <%= @compo.description %>
+        </p>
+        <p>
+          Starting at: <%= @compo.start_date %>
+        </p>
+        <p>
+          Running till: <%= @compo.end_date %>
+        </p>
+        <p>
+          Active projects: 23
+        </p>
+        <p>
+          Judges: 5
+        </p>
+        <br/>
+        <h3>Top 10</h3>
+        1. Ado<br/>
+        2. Den Haag<br/>
+        3. Jostiband<br/>
+      </div>
+    </div>
+  </div>
+  <div id="body_right">
+    <h3>Projects in Competition</h3>
+    <% @projects.each do |project| %>
+        <%= link_to project.title %> (3/5)<br/>
+    <% end %>
+  </div>
+</div>

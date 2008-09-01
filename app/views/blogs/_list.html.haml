@@ -1,0 +1,21 @@
+-right_box do
+  %h3 Latest posts
+  %div.scroll-300
+    %ul.activities
+      -unless blogs.blank?
+        -blogs.each do |blog|
+          %li
+            %p
+              %span.activity
+                = link_to_remote blog.title, :url => user_blog_path(current_user.id, blog), :update => "project_grid" ,:method => "get"              
+              %span.when
+                = time_ago_in_words(blog.created_at) + " ago by " 
+                = link_to blog.user.login, user_path(blog.user.id)
+      -else
+        %p
+          %span.activity
+            No blog posts yet.
+      - if @user == current_user
+        %p
+          %span.activity
+            = link_to "New post", new_user_blog_path(current_user)

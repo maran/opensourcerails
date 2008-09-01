@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  compo_category_id: 1
+  score: 1
+  description: MyText
+
+two:
+  compo_category_id: 1
+  score: 1
+  description: MyText

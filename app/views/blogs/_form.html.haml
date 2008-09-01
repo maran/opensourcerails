@@ -1,0 +1,5 @@
+- build_form_for [current_user, @blog] do |f|
+  = f.error_messages
+  = f.text_field :title, :label => "Title"
+  = f.text_area :body, :label => "Post body  (<a href='http://hobix.com/textile/quick.html'>Basic textile supported</a>)"
+  = f.submit

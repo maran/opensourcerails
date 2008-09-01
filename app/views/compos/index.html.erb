@@ -1,0 +1,18 @@
+<div id="body">
+  <div id="body_left" class="swap">
+    <div id="left_pad">
+      <div id="project_grid">
+        <h3>Competitions</h3>
+        <ul>
+          <% @compos.each do |compo| %>
+            <li><%= link_to compo.name, compo_path(compo) %></li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="body_right">
+    <h3>Some space</h3>
+    
+  </div>
+</div>
