@@ -15,7 +15,7 @@ projects_per_page: 6
 
 # Set Avatar Sizes
 screenshot_sizes: 
-  medium: "128x192"
+  medium: "256x384"
   thumb: "70x70"
 
 # Set default avatar
