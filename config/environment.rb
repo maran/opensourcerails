@@ -139,6 +139,8 @@ Rails::Initializer.run do |config|
   
 end
 
+require 'redcloth'
+
 ActionMailer::Base.delivery_method = :smtp
 if defined? ExceptionNotifier
   ExceptionNotifier.exception_recipients = %w(maran@brightlight-ict.nl)
