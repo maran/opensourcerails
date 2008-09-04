@@ -59,10 +59,10 @@ module ProjectsHelper
     
     haml_tag :span, :class => "bookmark-control" do
       if current_or_anon_user.bookmarked?(project)
-        puts link_to_image("favorite.png", project_bookmark_url(project), :method => :delete, :title => "Click to Remove Bookmark")
-        puts link_to("Unbookmark it...", project_bookmark_url(project), :method => :delete)
+        puts link_to_image("favorite.png", project_bookmark_url(project), {:alt => "Favorite this homebrew"},:method => :delete, :title => "Click to Remove Bookmark")
+        puts link_to("Unbookmark it...", project_bookmark_url(project),:method => :delete)
       else
-        puts link_to_image("favorite-off.png", project_bookmark_url(project), :method => :post, :title => "Click to Add Bookmark")
+        puts link_to_image("favorite-off.png", project_bookmark_url(project),{:alt => "Favorite this homebrew"}, :method => :post, :title => "Click to Add Bookmark")
         puts link_to("Bookmark It", project_bookmark_url(project), :method => :post)
       end
       puts " | "
@@ -76,9 +76,9 @@ module ProjectsHelper
       # Add Bookmark Button
       bookmark_count = pluralize(project.bookmarks.size, "person")+" bookmarked this application"
       if current_or_anon_user.bookmarked?(project)
-        puts link_to_image("favorite-mini.png", project_bookmark_url(project), :method => :delete, :title => bookmark_count, :class => "bookmark-button remove")
+        puts link_to_image("favorite-mini.png", project_bookmark_url(project), {:alt => "Bookmark this homebrew"},:method => :delete, :title => bookmark_count, :class => "bookmark-button remove")
       else
-        puts link_to_image("favorite-off-mini.png", project_bookmark_url(project), :method => :post, :title => bookmark_count, :class => "bookmark-button add")
+        puts link_to_image("favorite-off-mini.png", project_bookmark_url(project),{:alt => "Un-Bookmark this homebrew"}, :method => :post, :title => bookmark_count, :class => "bookmark-button add")
       end
     end
   end
