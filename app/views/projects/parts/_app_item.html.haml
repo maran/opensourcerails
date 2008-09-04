@@ -7,12 +7,12 @@
       
     -# slideshow link
     #app_item_top_right
-      = link_to "<span>&nbsp;</span>View Slideshow", "#slideshow", :class => "replace", :id => "view_slideshow_link"
+      = link_to "<span>&nbsp;</span>View Slideshow", "#slideshow", :class => "replace", :id => "view_slideshow_link", :title => "View homebrew slideshow"
     = clear
   
   -# show default screenshot
   #app_item_image
-    = link_to image_tag(project.screenshot_url), project.screenshot_url, :id => "main_screenshot"
+    = link_to image_tag(project.screenshot_url, :alt => "Screenshot for homebrew: #{project.title}"), project.screenshot_url, :id => "main_screenshot"
   
   -# show ratings and bookmarks
   #app_item_links

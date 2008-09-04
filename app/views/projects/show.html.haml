@@ -21,7 +21,7 @@
         
   #body_right
     #go_back
-      = link_to_image "back-arrow-sm.png", projects_url(:page => session[:page]), :label => "Back to Gallery..."
+      = link_to_image "back-arrow-sm.png", projects_url(:page => session[:page]), {:alt => "Back to homebrew gallery"}, :label => "Back to homebrew Gallery..."
     #project_info
       - right_box do
         = partial "projects/parts/about_project", :project => @project

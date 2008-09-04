@@ -1,6 +1,6 @@
 - if local_assigns[:project]  
   - div_for(project, :class => cycle("start-row", "")) do
-    %h2= link_to h(project.title), project_url(project), :rel => "bookmark", :title => h(project.short_description)
+    %h2= link_to h(project.title), project_url(project), :rel => "bookmark homebrew", :title => h(project.short_description)
     %p= project.short_description
     
     -# show default screenshot

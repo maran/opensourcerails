@@ -66,14 +66,14 @@ module ApplicationHelper
     action == "edit" || action == "update"
   end
   
-  def link_to_image(img_url, link_url, options={})
+  def link_to_image(img_url, link_url,image_options={}, options={})
     
     link = []
     label = options.delete(:label)
     
-    link << link_to(image_tag(img_url), link_url, options)
+    link << link_to(image_tag(img_url, image_options), link_url, options)
     link << link_to(label, link_url, options) if label
-    
+ 
     link.join(" ");
   end
   

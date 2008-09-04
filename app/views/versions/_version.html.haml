@@ -3,7 +3,7 @@
   -# hide for nonspammers
   - if spam_shield?(version)
     .version
-      = link_to image_tag("download.png"), project_version_url(@project, version), :title => "Click here to Download"
+      = link_to image_tag("download.png", :alt => "Download homebrew: #{@project.title}"), project_version_url(@project, version), :title => "Click here to Download"
   
       -# display bold if download_url matches project default
       = link_to version.title, project_version_url(@project, version), :class => (version.is_default? ? "bold" : ""), :title => "Click here to Download"
