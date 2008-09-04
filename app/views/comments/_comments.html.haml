@@ -6,7 +6,7 @@
   
   - if comments.size > 0
     %h2 
-      = image_tag("comments.png", :alt => "Comments for homebrew #{comment.project.title}")
+      = image_tag("comments.png", :alt => "Comments for homebrew #{comments[0].project.title}")
       = pluralize(comments.size, "Comment")
   - comments.each_with_index do |comment, index|
     - if spam_shield?(comment)
