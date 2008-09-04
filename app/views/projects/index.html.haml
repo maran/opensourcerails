@@ -11,7 +11,7 @@
   #body_right
     = partial "layouts/searchbox"
     #submit_app
-      = link_to_image "template/submit_app.gif", "#", |
+      = link_to_image "template/submit_app.gif", "#",{:alt => "New homebrew"}, |
                       :label => "Submit a New Application", |
                       :class => "submit toggle", :rel => "#new_project_tab_form" |
     
