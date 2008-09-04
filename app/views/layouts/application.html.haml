@@ -14,7 +14,7 @@
 
     = yield :head
         
-    = auto_discovery_link_tag(:atom, AppConfig.rss_url || formatted_projects_url(:atom), :title => "Latest Projects")
+    = auto_discovery_link_tag(:atom, AppConfig.rss_url || formatted_projects_url(:atom), :title => "Latest Homebrew Projects")
     
   %body
     .site_notice              
