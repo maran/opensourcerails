@@ -8,7 +8,7 @@ file_storage: file
 
 # SEO Stuff
 default_meta_keywords: "NintendoDS Nintendo DS Homebrew Games Application"
-default_meta_description: "Community-driven Nintendo DS homebrew archive."
+default_meta_description: "Community-driven Nintendo DS homebrew archive for developers and users."
 
 # Paging Sizes
 projects_per_page: 6
